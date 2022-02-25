@@ -1,27 +1,28 @@
 import { FC } from "react"
-import { Box, Button, Container, Content, Input, Span } from "./styled"
+import { Link } from "react-router-dom"
+import { Box, Button, Container, Content, Input, Links, Span, Title } from "./styled"
 
-const SignIn: FC = () => {
+export const SignIn: FC = () => {
     return(
 
     <Container>
         <Box>
-            <h1>Bem Vindo</h1>
+            <Title>
+                Bem Vindo
+            </Title>
             <Content>
                 <Span>Email</Span>
                 <Input type='email' placeholder="Email" />
-            </Content>
-            <Content>    
                 <Span>Password</Span>
-                <Input type='text' placeholder="Password" />
-            </Content>    
-            <Content>
+                <Input type='password' placeholder="Password" />
                 <Button>Login</Button>
             </Content>
+            <Links>
+                <Link to={"/recuperar-senha"}> <Span>Esqueceu sua senha?</Span></Link>
+                <Link to={"/cadastro"}> <Span>Não tem cadastro?</Span></Link>
+            </Links>
         </Box>
     </Container>
 
     )
 }
-
-export default SignIn

@@ -10,20 +10,19 @@ export const Container = styled.div`
 `
 
 export const Box = styled.div`
-    width: 400px;
-    height: 500px;
+    width: 390px;
+    height: 550px;
     background: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     border-radius: 10px;
 `
 
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
 `
 
 export const Span = styled.span`
@@ -35,10 +34,15 @@ export const Span = styled.span`
 export const Input = styled.input`
     padding: 10px;
     font-size: 14px;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom-width: 0.5px;
+    outline: 0;
 `
 
 export const Button = styled.button`
-    margin: 10px auto 0 auto;
+    margin: 50px auto 20px;  
     font-size: 14px;
     background: #41AEFE;
     border-color: #FFF;
@@ -47,4 +51,19 @@ export const Button = styled.button`
     padding: 8px;
     border-radius: 50px;
     
+`
+
+export const Title = styled.div`
+    padding: 80px 0 60px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+`
+export const Links = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end; 
+    padding-top: 70px
 `
